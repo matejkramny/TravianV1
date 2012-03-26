@@ -1,0 +1,763 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4F3EF568150C07650043BA02 /* HTMLParserController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F3EF567150C07650043BA02 /* HTMLParserController.m */; };
+		4F3EF56C150C07870043BA02 /* BuildingObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F3EF56B150C07870043BA02 /* BuildingObject.m */; };
+		4F3EF570150C08520043BA02 /* VillageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F3EF56F150C08520043BA02 /* VillageObject.m */; };
+		4F72C1ED150666D800796B6A /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4F72C1EC150666D800796B6A /* Settings.bundle */; };
+		4F79298F150AB55B002AFE20 /* CacheController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F79298E150AB55B002AFE20 /* CacheController.m */; };
+		4F793A40150D4036009078B5 /* VillageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F793A3F150D4036009078B5 /* VillageTableViewController.m */; };
+		4F796AC3150794FE009520D6 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F796AC2150794FE009520D6 /* libxml2.2.dylib */; };
+		4F796AC815079592009520D6 /* HTMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F796AC515079592009520D6 /* HTMLNode.m */; };
+		4F796AC915079592009520D6 /* HTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F796AC715079592009520D6 /* HTMLParser.m */; };
+		4F796AD01507ABDC009520D6 /* AccountsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F796ACF1507ABDC009520D6 /* AccountsViewController.m */; };
+		4F796AD41507AC7F009520D6 /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F796AD31507AC7F009520D6 /* Account.m */; };
+		4F79E06B1508DC810004CA76 /* TribeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F79E06A1508DC810004CA76 /* TribeTableViewController.m */; };
+		4F7C4F39150D039D000152F7 /* Tlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F7C4F38150D039D000152F7 /* Tlogo.png */; };
+		4F7C4F3C150D0420000152F7 /* Tlogo non-retine.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F7C4F3B150D0420000152F7 /* Tlogo non-retine.png */; };
+		4F7C4F3E150D103A000152F7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F7C4F3D150D103A000152F7 /* Default@2x.png */; };
+		4F7C4F40150D168A000152F7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F7C4F3F150D168A000152F7 /* Default.png */; };
+		4F843CBA15081AEF003D7A54 /* AccountDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F843CB915081AEF003D7A54 /* AccountDetailsViewController.m */; };
+		4F85DDC715098237004726E6 /* SharedStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F85DDC615098237004726E6 /* SharedStorage.m */; };
+		4F8DC2DB150A3C9700C4C71D /* VillagesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8DC2DA150A3C9700C4C71D /* VillagesTableViewController.m */; };
+		4F8DC2E1150A3CC000C4C71D /* ReportsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8DC2E0150A3CC000C4C71D /* ReportsTableViewController.m */; };
+		4F8DC2E4150A3CCF00C4C71D /* MessagesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8DC2E3150A3CCF00C4C71D /* MessagesTableViewController.m */; };
+		4F8DC2E7150A3CFA00C4C71D /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8DC2E6150A3CFA00C4C71D /* SettingsTableViewController.m */; };
+		4F8DC2EA150A4C2C00C4C71D /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8DC2E9150A4C2C00C4C71D /* MBProgressHUD.m */; };
+		4F90A8951512BAED004D1166 /* VillageOverviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F90A8941512BAED004D1166 /* VillageOverviewViewController.m */; };
+		4F90A8991512C8E4004D1166 /* MovementsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F90A8981512C8E4004D1166 /* MovementsViewController.m */; };
+		4F90A89C1512C8F8004D1166 /* MovementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F90A89B1512C8F8004D1166 /* MovementViewController.m */; };
+		4F90A89F1512D6CF004D1166 /* MovementObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F90A89E1512D6CF004D1166 /* MovementObject.m */; };
+		4F90A8A21512D7A8004D1166 /* DetailedMovementObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F90A8A11512D7A8004D1166 /* DetailedMovementObject.m */; };
+		4FA59F59150591D200A66720 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA59F58150591D200A66720 /* UIKit.framework */; };
+		4FA59F5B150591D200A66720 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA59F5A150591D200A66720 /* Foundation.framework */; };
+		4FA59F5D150591D200A66720 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA59F5C150591D200A66720 /* CoreGraphics.framework */; };
+		4FA59F63150591D200A66720 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4FA59F61150591D200A66720 /* InfoPlist.strings */; };
+		4FA59F65150591D200A66720 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FA59F64150591D200A66720 /* main.m */; };
+		4FA59F69150591D200A66720 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FA59F68150591D200A66720 /* AppDelegate.m */; };
+		4FA59F6C150591D200A66720 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FA59F6A150591D200A66720 /* MainStoryboard.storyboard */; };
+		4FA59F82150591D200A66720 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA59F81150591D200A66720 /* SenTestingKit.framework */; };
+		4FA59F83150591D200A66720 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA59F58150591D200A66720 /* UIKit.framework */; };
+		4FA59F84150591D200A66720 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA59F5A150591D200A66720 /* Foundation.framework */; };
+		4FA59F8C150591D300A66720 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4FA59F8A150591D300A66720 /* InfoPlist.strings */; };
+		4FA59F8F150591D300A66720 /* TravianTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FA59F8E150591D300A66720 /* TravianTests.m */; };
+		4FF2EEF11506C92000495EF8 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FF2EEF01506C92000495EF8 /* TestViewController.m */; };
+		4FF2EEF51506D67800495EF8 /* WebController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FF2EEF41506D67800495EF8 /* WebController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4FA59F85150591D300A66720 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FA59F4B150591D200A66720 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4FA59F53150591D200A66720;
+			remoteInfo = Travian;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4F3EF566150C07650043BA02 /* HTMLParserController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLParserController.h; sourceTree = "<group>"; };
+		4F3EF567150C07650043BA02 /* HTMLParserController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLParserController.m; sourceTree = "<group>"; };
+		4F3EF56A150C07870043BA02 /* BuildingObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuildingObject.h; sourceTree = "<group>"; };
+		4F3EF56B150C07870043BA02 /* BuildingObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuildingObject.m; sourceTree = "<group>"; };
+		4F3EF56E150C08520043BA02 /* VillageObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VillageObject.h; sourceTree = "<group>"; };
+		4F3EF56F150C08520043BA02 /* VillageObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VillageObject.m; sourceTree = "<group>"; };
+		4F72C1EC150666D800796B6A /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		4F79298D150AB55B002AFE20 /* CacheController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CacheController.h; path = ../CacheController.h; sourceTree = "<group>"; };
+		4F79298E150AB55B002AFE20 /* CacheController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CacheController.m; path = ../CacheController.m; sourceTree = "<group>"; };
+		4F793A3E150D4036009078B5 /* VillageTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VillageTableViewController.h; sourceTree = "<group>"; };
+		4F793A3F150D4036009078B5 /* VillageTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VillageTableViewController.m; sourceTree = "<group>"; };
+		4F796AC2150794FE009520D6 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
+		4F796AC415079592009520D6 /* HTMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLNode.h; sourceTree = "<group>"; };
+		4F796AC515079592009520D6 /* HTMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLNode.m; sourceTree = "<group>"; };
+		4F796AC615079592009520D6 /* HTMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLParser.h; sourceTree = "<group>"; };
+		4F796AC715079592009520D6 /* HTMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLParser.m; sourceTree = "<group>"; };
+		4F796ACE1507ABDC009520D6 /* AccountsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AccountsViewController.h; path = ../AccountsViewController.h; sourceTree = "<group>"; };
+		4F796ACF1507ABDC009520D6 /* AccountsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AccountsViewController.m; path = ../AccountsViewController.m; sourceTree = "<group>"; };
+		4F796AD21507AC7F009520D6 /* Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
+		4F796AD31507AC7F009520D6 /* Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Account.m; sourceTree = "<group>"; };
+		4F796AD81507B5AE009520D6 /* Tribes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tribes.h; path = ../Tribes.h; sourceTree = "<group>"; };
+		4F79E0691508DC810004CA76 /* TribeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TribeTableViewController.h; sourceTree = "<group>"; };
+		4F79E06A1508DC810004CA76 /* TribeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TribeTableViewController.m; sourceTree = "<group>"; };
+		4F7C4F38150D039D000152F7 /* Tlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tlogo.png; sourceTree = "<group>"; };
+		4F7C4F3B150D0420000152F7 /* Tlogo non-retine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tlogo non-retine.png"; sourceTree = "<group>"; };
+		4F7C4F3D150D103A000152F7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		4F7C4F3F150D168A000152F7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		4F843CB815081AEF003D7A54 /* AccountDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountDetailsViewController.h; sourceTree = "<group>"; };
+		4F843CB915081AEF003D7A54 /* AccountDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountDetailsViewController.m; sourceTree = "<group>"; };
+		4F85DDC3150981CF004726E6 /* SharedStorageDelegateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharedStorageDelegateProtocol.h; sourceTree = "<group>"; };
+		4F85DDC515098237004726E6 /* SharedStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharedStorage.h; sourceTree = "<group>"; };
+		4F85DDC615098237004726E6 /* SharedStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharedStorage.m; sourceTree = "<group>"; };
+		4F8DC2D9150A3C9700C4C71D /* VillagesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VillagesTableViewController.h; sourceTree = "<group>"; };
+		4F8DC2DA150A3C9700C4C71D /* VillagesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VillagesTableViewController.m; sourceTree = "<group>"; };
+		4F8DC2DF150A3CC000C4C71D /* ReportsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReportsTableViewController.h; sourceTree = "<group>"; };
+		4F8DC2E0150A3CC000C4C71D /* ReportsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReportsTableViewController.m; sourceTree = "<group>"; };
+		4F8DC2E2150A3CCF00C4C71D /* MessagesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessagesTableViewController.h; sourceTree = "<group>"; };
+		4F8DC2E3150A3CCF00C4C71D /* MessagesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessagesTableViewController.m; sourceTree = "<group>"; };
+		4F8DC2E5150A3CFA00C4C71D /* SettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsTableViewController.h; sourceTree = "<group>"; };
+		4F8DC2E6150A3CFA00C4C71D /* SettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewController.m; sourceTree = "<group>"; };
+		4F8DC2E8150A4C2C00C4C71D /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		4F8DC2E9150A4C2C00C4C71D /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		4F90A8931512BAED004D1166 /* VillageOverviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VillageOverviewViewController.h; sourceTree = "<group>"; };
+		4F90A8941512BAED004D1166 /* VillageOverviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VillageOverviewViewController.m; sourceTree = "<group>"; };
+		4F90A8971512C8E4004D1166 /* MovementsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovementsViewController.h; sourceTree = "<group>"; };
+		4F90A8981512C8E4004D1166 /* MovementsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovementsViewController.m; sourceTree = "<group>"; };
+		4F90A89A1512C8F8004D1166 /* MovementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovementViewController.h; sourceTree = "<group>"; };
+		4F90A89B1512C8F8004D1166 /* MovementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovementViewController.m; sourceTree = "<group>"; };
+		4F90A89D1512D6CF004D1166 /* MovementObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovementObject.h; sourceTree = "<group>"; };
+		4F90A89E1512D6CF004D1166 /* MovementObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovementObject.m; sourceTree = "<group>"; };
+		4F90A8A01512D7A8004D1166 /* DetailedMovementObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailedMovementObject.h; sourceTree = "<group>"; };
+		4F90A8A11512D7A8004D1166 /* DetailedMovementObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailedMovementObject.m; sourceTree = "<group>"; };
+		4FA59F54150591D200A66720 /* Travian.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Travian.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FA59F58150591D200A66720 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4FA59F5A150591D200A66720 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4FA59F5C150591D200A66720 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4FA59F60150591D200A66720 /* Travian-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Travian-Info.plist"; sourceTree = "<group>"; };
+		4FA59F62150591D200A66720 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4FA59F64150591D200A66720 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4FA59F66150591D200A66720 /* Travian-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Travian-Prefix.pch"; sourceTree = "<group>"; };
+		4FA59F67150591D200A66720 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4FA59F68150591D200A66720 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4FA59F6B150591D200A66720 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		4FA59F80150591D200A66720 /* TravianTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravianTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FA59F81150591D200A66720 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		4FA59F89150591D300A66720 /* TravianTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TravianTests-Info.plist"; sourceTree = "<group>"; };
+		4FA59F8B150591D300A66720 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4FA59F8D150591D300A66720 /* TravianTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TravianTests.h; sourceTree = "<group>"; };
+		4FA59F8E150591D300A66720 /* TravianTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TravianTests.m; sourceTree = "<group>"; };
+		4FA59FE1150643DC00A66720 /* Travian.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Travian.entitlements; sourceTree = "<group>"; };
+		4FF2EEEF1506C92000495EF8 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestViewController.h; path = Travian/TestViewController.h; sourceTree = "<group>"; };
+		4FF2EEF01506C92000495EF8 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestViewController.m; path = Travian/TestViewController.m; sourceTree = "<group>"; };
+		4FF2EEF31506D67800495EF8 /* WebController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebController.h; sourceTree = "<group>"; };
+		4FF2EEF41506D67800495EF8 /* WebController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4FA59F51150591D200A66720 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F796AC3150794FE009520D6 /* libxml2.2.dylib in Frameworks */,
+				4FA59F59150591D200A66720 /* UIKit.framework in Frameworks */,
+				4FA59F5B150591D200A66720 /* Foundation.framework in Frameworks */,
+				4FA59F5D150591D200A66720 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FA59F7C150591D200A66720 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FA59F82150591D200A66720 /* SenTestingKit.framework in Frameworks */,
+				4FA59F83150591D200A66720 /* UIKit.framework in Frameworks */,
+				4FA59F84150591D200A66720 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4F3EF56D150C08410043BA02 /* Travian objects */ = {
+			isa = PBXGroup;
+			children = (
+				4F796AD81507B5AE009520D6 /* Tribes.h */,
+				4F796AD21507AC7F009520D6 /* Account.h */,
+				4F796AD31507AC7F009520D6 /* Account.m */,
+				4F3EF56A150C07870043BA02 /* BuildingObject.h */,
+				4F3EF56B150C07870043BA02 /* BuildingObject.m */,
+				4F3EF56E150C08520043BA02 /* VillageObject.h */,
+				4F3EF56F150C08520043BA02 /* VillageObject.m */,
+				4F90A89D1512D6CF004D1166 /* MovementObject.h */,
+				4F90A89E1512D6CF004D1166 /* MovementObject.m */,
+				4F90A8A01512D7A8004D1166 /* DetailedMovementObject.h */,
+				4F90A8A11512D7A8004D1166 /* DetailedMovementObject.m */,
+			);
+			name = "Travian objects";
+			sourceTree = "<group>";
+		};
+		4F793A42150D4391009078B5 /* Villages */ = {
+			isa = PBXGroup;
+			children = (
+				4F90A8921512B690004D1166 /* Village */,
+				4F8DC2D9150A3C9700C4C71D /* VillagesTableViewController.h */,
+				4F8DC2DA150A3C9700C4C71D /* VillagesTableViewController.m */,
+			);
+			name = Villages;
+			sourceTree = "<group>";
+		};
+		4F79E0621508C8630004CA76 /* Account Detail Views */ = {
+			isa = PBXGroup;
+			children = (
+				4F843CB815081AEF003D7A54 /* AccountDetailsViewController.h */,
+				4F843CB915081AEF003D7A54 /* AccountDetailsViewController.m */,
+				4F79E0691508DC810004CA76 /* TribeTableViewController.h */,
+				4F79E06A1508DC810004CA76 /* TribeTableViewController.m */,
+			);
+			name = "Account Detail Views";
+			sourceTree = "<group>";
+		};
+		4F79E06C1508F8AC0004CA76 /* HTMLParser */ = {
+			isa = PBXGroup;
+			children = (
+				4F3EF566150C07650043BA02 /* HTMLParserController.h */,
+				4F3EF567150C07650043BA02 /* HTMLParserController.m */,
+				4F796AC415079592009520D6 /* HTMLNode.h */,
+				4F796AC515079592009520D6 /* HTMLNode.m */,
+				4F796AC615079592009520D6 /* HTMLParser.h */,
+				4F796AC715079592009520D6 /* HTMLParser.m */,
+			);
+			name = HTMLParser;
+			sourceTree = "<group>";
+		};
+		4F8DC2D7150A3C1800C4C71D /* Account Selected */ = {
+			isa = PBXGroup;
+			children = (
+				4F793A42150D4391009078B5 /* Villages */,
+				4FADA14B15117A1800E43A61 /* Reports */,
+				4FADA14C15117A2000E43A61 /* Messages */,
+				4FADA14D15117A2800E43A61 /* Settings */,
+			);
+			name = "Account Selected";
+			sourceTree = "<group>";
+		};
+		4F90A8921512B690004D1166 /* Village */ = {
+			isa = PBXGroup;
+			children = (
+				4F793A3E150D4036009078B5 /* VillageTableViewController.h */,
+				4F793A3F150D4036009078B5 /* VillageTableViewController.m */,
+				4F90A8961512C8C7004D1166 /* Overview */,
+			);
+			name = Village;
+			sourceTree = "<group>";
+		};
+		4F90A8961512C8C7004D1166 /* Overview */ = {
+			isa = PBXGroup;
+			children = (
+				4F90A8931512BAED004D1166 /* VillageOverviewViewController.h */,
+				4F90A8941512BAED004D1166 /* VillageOverviewViewController.m */,
+				4F90A8971512C8E4004D1166 /* MovementsViewController.h */,
+				4F90A8981512C8E4004D1166 /* MovementsViewController.m */,
+				4F90A89A1512C8F8004D1166 /* MovementViewController.h */,
+				4F90A89B1512C8F8004D1166 /* MovementViewController.m */,
+			);
+			name = Overview;
+			sourceTree = "<group>";
+		};
+		4FA59F49150591D200A66720 = {
+			isa = PBXGroup;
+			children = (
+				4F7C4F3F150D168A000152F7 /* Default.png */,
+				4F7C4F3D150D103A000152F7 /* Default@2x.png */,
+				4F7C4F3B150D0420000152F7 /* Tlogo non-retine.png */,
+				4F7C4F38150D039D000152F7 /* Tlogo.png */,
+				4FA59F5E150591D200A66720 /* Travian */,
+				4FA59F87150591D300A66720 /* TravianTests */,
+				4FA59F57150591D200A66720 /* Frameworks */,
+				4FA59F55150591D200A66720 /* Products */,
+				4FF2EEEF1506C92000495EF8 /* TestViewController.h */,
+				4FF2EEF01506C92000495EF8 /* TestViewController.m */,
+			);
+			sourceTree = "<group>";
+		};
+		4FA59F55150591D200A66720 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4FA59F54150591D200A66720 /* Travian.app */,
+				4FA59F80150591D200A66720 /* TravianTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4FA59F57150591D200A66720 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F796AC2150794FE009520D6 /* libxml2.2.dylib */,
+				4FA59F58150591D200A66720 /* UIKit.framework */,
+				4FA59F5A150591D200A66720 /* Foundation.framework */,
+				4FA59F5C150591D200A66720 /* CoreGraphics.framework */,
+				4FA59F81150591D200A66720 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4FA59F5E150591D200A66720 /* Travian */ = {
+			isa = PBXGroup;
+			children = (
+				4F85DDC3150981CF004726E6 /* SharedStorageDelegateProtocol.h */,
+				4F85DDC515098237004726E6 /* SharedStorage.h */,
+				4F85DDC615098237004726E6 /* SharedStorage.m */,
+				4FA59F67150591D200A66720 /* AppDelegate.h */,
+				4FA59F68150591D200A66720 /* AppDelegate.m */,
+				4FA59F6A150591D200A66720 /* MainStoryboard.storyboard */,
+				4F796ACE1507ABDC009520D6 /* AccountsViewController.h */,
+				4F796ACF1507ABDC009520D6 /* AccountsViewController.m */,
+				4F79E0621508C8630004CA76 /* Account Detail Views */,
+				4F8DC2D7150A3C1800C4C71D /* Account Selected */,
+				4F72C1EC150666D800796B6A /* Settings.bundle */,
+				4FA59FE1150643DC00A66720 /* Travian.entitlements */,
+				4F3EF56D150C08410043BA02 /* Travian objects */,
+				4F79298D150AB55B002AFE20 /* CacheController.h */,
+				4F79298E150AB55B002AFE20 /* CacheController.m */,
+				4FF2EEF31506D67800495EF8 /* WebController.h */,
+				4FF2EEF41506D67800495EF8 /* WebController.m */,
+				4F8DC2E8150A4C2C00C4C71D /* MBProgressHUD.h */,
+				4F8DC2E9150A4C2C00C4C71D /* MBProgressHUD.m */,
+				4F79E06C1508F8AC0004CA76 /* HTMLParser */,
+				4FA59F5F150591D200A66720 /* Supporting Files */,
+			);
+			path = Travian;
+			sourceTree = "<group>";
+		};
+		4FA59F5F150591D200A66720 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4FA59F60150591D200A66720 /* Travian-Info.plist */,
+				4FA59F61150591D200A66720 /* InfoPlist.strings */,
+				4FA59F64150591D200A66720 /* main.m */,
+				4FA59F66150591D200A66720 /* Travian-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4FA59F87150591D300A66720 /* TravianTests */ = {
+			isa = PBXGroup;
+			children = (
+				4FA59F8D150591D300A66720 /* TravianTests.h */,
+				4FA59F8E150591D300A66720 /* TravianTests.m */,
+				4FA59F88150591D300A66720 /* Supporting Files */,
+			);
+			path = TravianTests;
+			sourceTree = "<group>";
+		};
+		4FA59F88150591D300A66720 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4FA59F89150591D300A66720 /* TravianTests-Info.plist */,
+				4FA59F8A150591D300A66720 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4FADA14B15117A1800E43A61 /* Reports */ = {
+			isa = PBXGroup;
+			children = (
+				4F8DC2DF150A3CC000C4C71D /* ReportsTableViewController.h */,
+				4F8DC2E0150A3CC000C4C71D /* ReportsTableViewController.m */,
+			);
+			name = Reports;
+			sourceTree = "<group>";
+		};
+		4FADA14C15117A2000E43A61 /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				4F8DC2E2150A3CCF00C4C71D /* MessagesTableViewController.h */,
+				4F8DC2E3150A3CCF00C4C71D /* MessagesTableViewController.m */,
+			);
+			name = Messages;
+			sourceTree = "<group>";
+		};
+		4FADA14D15117A2800E43A61 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				4F8DC2E5150A3CFA00C4C71D /* SettingsTableViewController.h */,
+				4F8DC2E6150A3CFA00C4C71D /* SettingsTableViewController.m */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4FA59F53150591D200A66720 /* Travian */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FA59F92150591D300A66720 /* Build configuration list for PBXNativeTarget "Travian" */;
+			buildPhases = (
+				4FA59F50150591D200A66720 /* Sources */,
+				4FA59F51150591D200A66720 /* Frameworks */,
+				4FA59F52150591D200A66720 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Travian;
+			productName = Travian;
+			productReference = 4FA59F54150591D200A66720 /* Travian.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4FA59F7F150591D200A66720 /* TravianTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FA59F95150591D300A66720 /* Build configuration list for PBXNativeTarget "TravianTests" */;
+			buildPhases = (
+				4FA59F7B150591D200A66720 /* Sources */,
+				4FA59F7C150591D200A66720 /* Frameworks */,
+				4FA59F7D150591D200A66720 /* Resources */,
+				4FA59F7E150591D200A66720 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4FA59F86150591D300A66720 /* PBXTargetDependency */,
+			);
+			name = TravianTests;
+			productName = TravianTests;
+			productReference = 4FA59F80150591D200A66720 /* TravianTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4FA59F4B150591D200A66720 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 4FA59F4E150591D200A66720 /* Build configuration list for PBXProject "Travian" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4FA59F49150591D200A66720;
+			productRefGroup = 4FA59F55150591D200A66720 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4FA59F53150591D200A66720 /* Travian */,
+				4FA59F7F150591D200A66720 /* TravianTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4FA59F52150591D200A66720 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FA59F63150591D200A66720 /* InfoPlist.strings in Resources */,
+				4FA59F6C150591D200A66720 /* MainStoryboard.storyboard in Resources */,
+				4F72C1ED150666D800796B6A /* Settings.bundle in Resources */,
+				4F7C4F39150D039D000152F7 /* Tlogo.png in Resources */,
+				4F7C4F3C150D0420000152F7 /* Tlogo non-retine.png in Resources */,
+				4F7C4F3E150D103A000152F7 /* Default@2x.png in Resources */,
+				4F7C4F40150D168A000152F7 /* Default.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FA59F7D150591D200A66720 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FA59F8C150591D300A66720 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4FA59F7E150591D200A66720 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4FA59F50150591D200A66720 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FA59F65150591D200A66720 /* main.m in Sources */,
+				4FA59F69150591D200A66720 /* AppDelegate.m in Sources */,
+				4FF2EEF11506C92000495EF8 /* TestViewController.m in Sources */,
+				4FF2EEF51506D67800495EF8 /* WebController.m in Sources */,
+				4F796AC815079592009520D6 /* HTMLNode.m in Sources */,
+				4F796AC915079592009520D6 /* HTMLParser.m in Sources */,
+				4F796AD01507ABDC009520D6 /* AccountsViewController.m in Sources */,
+				4F796AD41507AC7F009520D6 /* Account.m in Sources */,
+				4F843CBA15081AEF003D7A54 /* AccountDetailsViewController.m in Sources */,
+				4F79E06B1508DC810004CA76 /* TribeTableViewController.m in Sources */,
+				4F85DDC715098237004726E6 /* SharedStorage.m in Sources */,
+				4F8DC2DB150A3C9700C4C71D /* VillagesTableViewController.m in Sources */,
+				4F8DC2E1150A3CC000C4C71D /* ReportsTableViewController.m in Sources */,
+				4F8DC2E4150A3CCF00C4C71D /* MessagesTableViewController.m in Sources */,
+				4F8DC2E7150A3CFA00C4C71D /* SettingsTableViewController.m in Sources */,
+				4F8DC2EA150A4C2C00C4C71D /* MBProgressHUD.m in Sources */,
+				4F79298F150AB55B002AFE20 /* CacheController.m in Sources */,
+				4F3EF568150C07650043BA02 /* HTMLParserController.m in Sources */,
+				4F3EF56C150C07870043BA02 /* BuildingObject.m in Sources */,
+				4F3EF570150C08520043BA02 /* VillageObject.m in Sources */,
+				4F793A40150D4036009078B5 /* VillageTableViewController.m in Sources */,
+				4F90A8951512BAED004D1166 /* VillageOverviewViewController.m in Sources */,
+				4F90A8991512C8E4004D1166 /* MovementsViewController.m in Sources */,
+				4F90A89C1512C8F8004D1166 /* MovementViewController.m in Sources */,
+				4F90A89F1512D6CF004D1166 /* MovementObject.m in Sources */,
+				4F90A8A21512D7A8004D1166 /* DetailedMovementObject.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FA59F7B150591D200A66720 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FA59F8F150591D300A66720 /* TravianTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4FA59F86150591D300A66720 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4FA59F53150591D200A66720 /* Travian */;
+			targetProxy = 4FA59F85150591D300A66720 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4FA59F61150591D200A66720 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FA59F62150591D200A66720 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4FA59F6A150591D200A66720 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FA59F6B150591D200A66720 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		4FA59F8A150591D300A66720 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FA59F8B150591D300A66720 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4FA59F90150591D300A66720 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = $SDK_DIR/usr/include/libxml2;
+			};
+			name = Debug;
+		};
+		4FA59F91150591D300A66720 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = $SDK_DIR/usr/include/libxml2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4FA59F93150591D300A66720 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Travian/Travian.entitlements;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Travian/Travian-Prefix.pch";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				INFOPLIST_FILE = "Travian/Travian-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4FA59F94150591D300A66720 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Travian/Travian.entitlements;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Travian/Travian-Prefix.pch";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				INFOPLIST_FILE = "Travian/Travian-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4FA59F96150591D300A66720 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Travian.app/Travian";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Travian/Travian-Prefix.pch";
+				INFOPLIST_FILE = "TravianTests/TravianTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		4FA59F97150591D300A66720 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Travian.app/Travian";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Travian/Travian-Prefix.pch";
+				INFOPLIST_FILE = "TravianTests/TravianTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+		4FA59FE21506449600A66720 /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = $SDK_DIR/usr/include/libxml2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Ad Hoc";
+		};
+		4FA59FE31506449600A66720 /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Travian/Travian.entitlements;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Travian/Travian-Prefix.pch";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				INFOPLIST_FILE = "Travian/Travian-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = "Ad Hoc";
+		};
+		4FA59FE41506449600A66720 /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Travian.app/Travian";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Travian/Travian-Prefix.pch";
+				INFOPLIST_FILE = "TravianTests/TravianTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = "Ad Hoc";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4FA59F4E150591D200A66720 /* Build configuration list for PBXProject "Travian" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FA59F90150591D300A66720 /* Debug */,
+				4FA59F91150591D300A66720 /* Release */,
+				4FA59FE21506449600A66720 /* Ad Hoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FA59F92150591D300A66720 /* Build configuration list for PBXNativeTarget "Travian" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FA59F93150591D300A66720 /* Debug */,
+				4FA59F94150591D300A66720 /* Release */,
+				4FA59FE31506449600A66720 /* Ad Hoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FA59F95150591D300A66720 /* Build configuration list for PBXNativeTarget "TravianTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FA59F96150591D300A66720 /* Debug */,
+				4FA59F97150591D300A66720 /* Release */,
+				4FA59FE41506449600A66720 /* Ad Hoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4FA59F4B150591D200A66720 /* Project object */;
+}
