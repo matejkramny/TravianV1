@@ -344,11 +344,11 @@
             </objects>
             <point key="canvasLocation" x="573" y="-1148"/>
         </scene>
-        <!--Table View Controller - Resources-->
+        <!--Village Resources View Controller - Resources-->
         <scene sceneID="ZNn-DR-xVZ">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MBL-4A-dSB" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tableViewController id="1fM-VY-BaI" sceneMemberID="viewController">
+                <tableViewController id="1fM-VY-BaI" customClass="VillageResourcesViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="p4Q-B9-nEA">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -573,6 +573,16 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Resources" id="mE7-U9-59A"/>
+                    <connections>
+                        <outlet property="clayLabel" destination="Xul-ea-UCR" id="MCd-U7-u3a"/>
+                        <outlet property="consumingLabel" destination="atY-Ka-6xm" id="X5v-DG-TJq"/>
+                        <outlet property="granaryLabel" destination="Ntw-XP-SL4" id="XKq-eh-YCx"/>
+                        <outlet property="ironLabel" destination="cyO-Ay-1AK" id="YmC-RM-H3t"/>
+                        <outlet property="producingLabel" destination="qct-eQ-VMn" id="mhm-kt-8ST"/>
+                        <outlet property="warehouseLabel" destination="MeH-xk-Jqc" id="5pn-62-bO1"/>
+                        <outlet property="wheatLabel" destination="zCe-56-AwV" id="4oO-5h-dGj"/>
+                        <outlet property="woodLabel" destination="d62-mW-bha" id="umf-4Z-Wjz"/>
+                    </connections>
                 </tableViewController>
             </objects>
             <point key="canvasLocation" x="1113" y="-1664"/>
@@ -1247,12 +1257,28 @@
         </class>
         <class className="SettingsTableViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SettingsTableViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="logout:"/>
+            </relationships>
         </class>
         <class className="TribeTableViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TribeTableViewController.h"/>
         </class>
         <class className="VillageOverviewViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/VillageOverviewViewController.h"/>
+        </class>
+        <class className="VillageResourcesViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/VillageResourcesViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="clayLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="consumingLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="granaryLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="ironLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="producingLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="warehouseLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="wheatLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="woodLabel" candidateClass="UILabel"/>
+            </relationships>
         </class>
         <class className="VillagesTableViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/VillagesTableViewController.h"/>

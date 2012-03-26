@@ -44,9 +44,11 @@
 	{
 		[request setHTTPMethod: @"POST"];
 		[request setHTTPBody: myRequestData];
+        
+        [request setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"content-type"];
 	}
-	
-	[request setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"content-type"];
+    
+    [request setHTTPShouldHandleCookies:YES];
 	
 	return [[NSURLConnection alloc] initWithRequest:request delegate:delegate startImmediately:YES];
 }

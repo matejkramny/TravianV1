@@ -66,9 +66,11 @@
 	}
 	
 	Account *account = self.getSharedStorageObject.activeAccount;
-	NSString *url = [NSString stringWithFormat:@"http://%@.travian.%@/", account.world, account.location];
-	web.url = [url stringByAppendingString:@"dorf1.php"];
-	
+	//NSString *url = [NSString stringWithFormat:@"http://%@.travian.%@/", account.world, account.location];
+    NSString *url = [NSString stringWithFormat:@"http://localhost/spieler.html"];
+	//web.url = [url stringByAppendingString:@"dorf1.php"];
+	web.url = url;
+    
 	web.postData = [NSString stringWithFormat:@"name=%@&password=%@&lowRes=1&w=&login=1", account.loginName, account.loginPassword];
 	
 	loginConnectionData = [[NSMutableData alloc] init];
@@ -77,9 +79,10 @@
 
 - (void)reload
 {
-	Account *account = self.getSharedStorageObject.activeAccount;
-	NSString *url = [NSString stringWithFormat:@"http://%@.travian.%@/", account.world, account.location];
-	
+	//Account *account = self.getSharedStorageObject.activeAccount;
+	//NSString *url = [NSString stringWithFormat:@"http://%@.travian.%@/", account.world, account.location];
+    NSString *url = @"http://localhost/";
+    
 	if (loggedIn)
 	{
 		if (reloading) return; // Don't reload twice.. useless
@@ -88,7 +91,7 @@
 		reloading = YES;
 		[self notifyAccountWatchersWithNotification:DataSourceRefreshing];
 		
-		web.url = [url stringByAppendingString:@"spieler.php"];
+		web.url = [url stringByAppendingString:@"spieler.html"];
 		web.postData = nil;
 		
 		initialConnectionData = [[NSMutableData alloc] init];
@@ -142,12 +145,14 @@
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSHTTPURLResponse *)response
 {
 	[[self getConnectionData:connection] setLength:0];
+    [[self getConnectionData:connection] setData:[NSData data]];
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection
 {
 	NSString *html = [[NSString alloc] initWithData:[self getConnectionData:connection] encoding:NSUTF8StringEncoding];
 	NSError *error;
+    NSLog(@"HTML: %@", html);
 	HTMLParser *parser = [[HTMLParser alloc] initWithString:html error:&error];
 	if (error)
 	{
@@ -175,14 +180,20 @@
 			// Success logging in
 			[self notifyAccountWatchersWithNotification:AccountLoggedIn];
 			[self reload];
+            
+            loginConnection = nil;
+            
 			return;
 		}
 		
+        initialConnection = nil;
+        
 		NSArray *villages = [self.parserController fetchVillagesFromNode:bodyNode];
 		
-		Account *account = self.getSharedStorageObject.activeAccount;
-		NSString *url = [NSString stringWithFormat:@"http://%@.travian.%@/", account.world, account.location];
-		fetchingVillages = [[NSMutableArray alloc] initWithCapacity:[villages count]];
+		//Account *account = self.getSharedStorageObject.activeAccount;
+		//NSString *url = [NSString stringWithFormat:@"http://%@.travian.%@/", account.world, account.location];
+		NSString *url = @"http://localhost/";
+        fetchingVillages = [[NSMutableArray alloc] initWithCapacity:[villages count]];
 		villageConnections = [[NSMutableArray alloc] initWithCapacity:[villages count] * 2];
 		villageConnectionsData = [[NSMutableArray alloc] initWithCapacity:[villages count] * 2];
 		
@@ -199,18 +210,18 @@
 		{
 			[accountVillages addObject:village];
 			
-			web.url = [url stringByAppendingFormat:@"dorf1.php%@", [village accessUrl]];
+			web.url = [url stringByAppendingFormat:@"dorf1.html%@", [village accessUrl]];
 			web.postData = nil;
 			[villageConnections addObject:[web startRequest:self]];
 			
-			web.url = [url stringByAppendingFormat:@"dorf2.php%@", [village accessUrl]];
+			web.url = [url stringByAppendingFormat:@"dorf2.html%@", [village accessUrl]];
 			[villageConnections addObject:[web startRequest:self]];
 		}
 		
 	}
 	else if ([villageConnections containsObject:connection])
 	{
-		// Fetch village
+        // Fetch village
 		int index = [villageConnections indexOfObjectIdenticalTo:connection];
 		
 		int villageIndex = 0;
@@ -233,6 +244,7 @@
 		if (index == [villageConnections count]-1)
 		{
 			reloading = NO; // Stopped reloading
+            villageConnections = nil;
 			[self notifyAccountWatchersWithNotification:DataSourceRefreshed];
 		}
 	}

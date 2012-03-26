@@ -20,8 +20,6 @@
 {
 	AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
 	[[appDelegate timeWatchers] addObject:self];
-	
-	arrivalTimeSeconds = 20;
 }
 - (void)deactivateTiming
 {

@@ -47,6 +47,7 @@
 		4FA59F84150591D200A66720 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA59F5A150591D200A66720 /* Foundation.framework */; };
 		4FA59F8C150591D300A66720 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4FA59F8A150591D300A66720 /* InfoPlist.strings */; };
 		4FA59F8F150591D300A66720 /* TravianTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FA59F8E150591D300A66720 /* TravianTests.m */; };
+		4FB985401515D105006A8FDA /* VillageResourcesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB9853F1515D105006A8FDA /* VillageResourcesViewController.m */; };
 		4FF2EEF11506C92000495EF8 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FF2EEF01506C92000495EF8 /* TestViewController.m */; };
 		4FF2EEF51506D67800495EF8 /* WebController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FF2EEF41506D67800495EF8 /* WebController.m */; };
 /* End PBXBuildFile section */
@@ -132,6 +133,8 @@
 		4FA59F8D150591D300A66720 /* TravianTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TravianTests.h; sourceTree = "<group>"; };
 		4FA59F8E150591D300A66720 /* TravianTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TravianTests.m; sourceTree = "<group>"; };
 		4FA59FE1150643DC00A66720 /* Travian.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Travian.entitlements; sourceTree = "<group>"; };
+		4FB9853E1515D105006A8FDA /* VillageResourcesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VillageResourcesViewController.h; sourceTree = "<group>"; };
+		4FB9853F1515D105006A8FDA /* VillageResourcesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VillageResourcesViewController.m; sourceTree = "<group>"; };
 		4FF2EEEF1506C92000495EF8 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestViewController.h; path = Travian/TestViewController.h; sourceTree = "<group>"; };
 		4FF2EEF01506C92000495EF8 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestViewController.m; path = Travian/TestViewController.m; sourceTree = "<group>"; };
 		4FF2EEF31506D67800495EF8 /* WebController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebController.h; sourceTree = "<group>"; };
@@ -232,6 +235,7 @@
 				4F793A3E150D4036009078B5 /* VillageTableViewController.h */,
 				4F793A3F150D4036009078B5 /* VillageTableViewController.m */,
 				4F90A8961512C8C7004D1166 /* Overview */,
+				4FB9853C1515D0D9006A8FDA /* Resources */,
 			);
 			name = Village;
 			sourceTree = "<group>";
@@ -371,6 +375,15 @@
 			name = Settings;
 			sourceTree = "<group>";
 		};
+		4FB9853C1515D0D9006A8FDA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4FB9853E1515D105006A8FDA /* VillageResourcesViewController.h */,
+				4FB9853F1515D105006A8FDA /* VillageResourcesViewController.m */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -508,6 +521,7 @@
 				4F90A89C1512C8F8004D1166 /* MovementViewController.m in Sources */,
 				4F90A89F1512D6CF004D1166 /* MovementObject.m in Sources */,
 				4F90A8A21512D7A8004D1166 /* DetailedMovementObject.m in Sources */,
+				4FB985401515D105006A8FDA /* VillageResourcesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

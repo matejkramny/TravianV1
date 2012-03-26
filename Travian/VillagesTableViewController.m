@@ -52,6 +52,9 @@
 {
     [super viewWillAppear:animated];
 	
+    AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    appDelegate.activeView = self.tabBarController.view;
+    
 	self.tabBarController.title = @"Villages";
 	self.tabBarController.navigationItem.hidesBackButton = YES;
 	//self.tabBarController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemUndo target:self action:@selector(nothing)];
