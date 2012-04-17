@@ -1,3 +1,4 @@
+
 //
 //  HTMLParserController.m
 //  Travian
@@ -138,8 +139,7 @@
 		village.notifications = [[NSMutableArray alloc] init];
 		if (movementsID)
 		{
-			HTMLNode *tableBody = [movementsID findChildTag:@"tbody"];
-			NSArray *trs = [tableBody findChildTags:@"tr"];
+			NSArray *trs = [movementsID findChildTags:@"tr"];
 			NSDictionary *movementTypes = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithInt: IncomingAttack], @"a1",
 										   [NSNumber numberWithInt: OutgoingAttack], @"a2",
 										   [NSNumber numberWithInt: IncomingReinforcement], @"d1",
@@ -148,6 +148,9 @@
 			
 			for (HTMLNode *tr in trs)
 			{
+				if ([tr findChildTag:@"th"])
+					continue;
+				
 				NSArray *tds = [tr findChildTags:@"td"];
 				HTMLNode *td2 = [tds objectAtIndex:1];
 				

@@ -138,11 +138,23 @@
 - (void)accountNotification:(NSNumber *)notificationObject
 {
 	int notificationInt = [notificationObject intValue];
+	AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
 	
 	switch (notificationInt) {
 		case DataSourceRefreshed:
 			[self performSegueWithIdentifier:@"OpenAccount" sender:self];
 			[self.getSharedStorageObject.cacheController removeAccountWatcher:self];
+			
+			break;
+		case AccountCannotLogIn:
+			appDelegate.HUD.labelText = @"Cannot log in";
+			[appDelegate.HUD hide:YES afterDelay:0.3];
+			
+			NSIndexPath *path = [NSIndexPath indexPathForRow:[self.getSharedStorageObject.accounts indexOfObjectIdenticalTo:selectedAccount] inSection:0];
+			
+			[[self tableView] deselectRowAtIndexPath:path animated:YES];
+			
+			selectedAccount = nil;
 			break;
 	}
 }

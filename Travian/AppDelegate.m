@@ -93,8 +93,6 @@
 
 - (void)accountNotification:(NSNumber *)notificationObject
 {
-	if (HUD == nil) return;
-	
 	int notificationInt = [notificationObject intValue];
 	
 	if (notificationInt == DataSourceRefreshing)
@@ -105,7 +103,7 @@
 			return;
 		}
 	}
-	NSLog(@"Some notification..");
+	
 	switch (notificationInt) {
 		case AccountLoggedIn:
 			HUD.labelText = @"Reloading";
@@ -123,6 +121,16 @@
 		case NewAccountMessage: // Display badge?
 			break;
 	}
+}
+
+#pragma mark - Logout
+
+- (void)logout
+{
+	[sharedStorage.cacheController removeAccountWatcher:self];
+	self.sharedStorage = [[SharedStorage alloc] init];
+	
+	[sharedStorage.cacheController addAccountWatcher:self];
 }
 
 @end

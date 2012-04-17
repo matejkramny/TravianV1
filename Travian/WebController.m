@@ -36,6 +36,8 @@
 
 - (NSURLConnection *)startRequest:(id)delegate
 {
+	NSLog(@"URL %@", url);
+	
 	NSData *myRequestData = [NSData dataWithBytes: [postData UTF8String] length: [postData length]];
 	NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL: [NSURL URLWithString: url] cachePolicy:NSURLCacheStorageNotAllowed timeoutInterval:60];
 	

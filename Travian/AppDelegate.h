@@ -20,5 +20,6 @@
 
 - (void)timerFired:(NSTimer *)timer;
 - (void)notifyTimeWatchers;
+- (void)logout;
 
 @end

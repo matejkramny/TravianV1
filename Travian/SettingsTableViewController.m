@@ -31,7 +31,7 @@
 
 - (IBAction)logout:(id)sender
 {
-	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Logging out." message:@"Account will log out" delegate:self cancelButtonTitle:@"Stay logged in" otherButtonTitles:@"Log out", nil];
+	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Logging out." message:@"Account will log out" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Log out", nil];
 	[alert show];
 }
 
@@ -110,6 +110,20 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+}
+
+#pragma mark - UIAlertViewDelegate
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+	if (buttonIndex == 1)
+	{
+		// logout
+		AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+		[appDelegate logout];
+		
+		[self.tabBarController.navigationController popViewControllerAnimated:YES];
+	}
 }
 
 @end

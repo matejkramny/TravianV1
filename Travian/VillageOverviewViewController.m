@@ -201,10 +201,6 @@
 
 - (void)timeWatchingAlert
 {
-	NSMutableArray *arr = self.getSharedStorageObject.activeAccount.activeVillage.notifications;
-	
-	if (arr == nil) return;
-	
 	[[self tableView] reloadData];
 }
 
