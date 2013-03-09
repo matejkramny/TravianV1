@@ -144,7 +144,7 @@
 										   [NSNumber numberWithInt: OutgoingAttack], @"a2",
 										   [NSNumber numberWithInt: IncomingReinforcement], @"d1",
 										   [NSNumber numberWithInt: OutgoingReinforcement], @"d2",
-										   [NSNumber numberWithInt: Adventure], @"d3", nil];
+										   [NSNumber numberWithInt: Adventure], @"adventure", nil];
 			
 			for (HTMLNode *tr in trs)
 			{

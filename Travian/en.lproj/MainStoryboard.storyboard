@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11D50d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="U9q-29-qlh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2507" systemVersion="12A269" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="U9q-29-qlh">
     <dependencies>
         <deployment defaultVersion="1296" identifier="iOS"/>
         <development defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1179"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1478"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -64,8 +64,8 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Accounts" id="ga0-yy-f0j"/>
                     <connections>
-                        <segue destination="h8x-l1-Ci6" kind="modal" identifier="NewAccount" id="684-pV-Pgh"/>
-                        <segue destination="KSr-EQ-JOQ" kind="push" identifier="OpenAccount" id="Vyo-x8-3aS"/>
+                        <segue destination="h8x-l1-Ci6" identifier="NewAccount" kind="modal" id="684-pV-Pgh"/>
+                        <segue destination="KSr-EQ-JOQ" identifier="OpenAccount" kind="push" id="Vyo-x8-3aS"/>
                     </connections>
                 </tableViewController>
             </objects>
@@ -137,7 +137,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="XDT-RM-Ini"/>
                     <connections>
-                        <segue destination="rI8-qj-IJs" kind="push" identifier="OpenMovement" id="JFt-Dq-a90"/>
+                        <segue destination="rI8-qj-IJs" identifier="OpenMovement" kind="push" id="JFt-Dq-a90"/>
                     </connections>
                 </tableViewController>
             </objects>
@@ -337,8 +337,8 @@
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Overview" id="JC5-nE-8nw"/>
                     <connections>
-                        <segue destination="bNh-YV-1jg" kind="push" identifier="OpenMovements" id="fMn-hf-Yad"/>
-                        <segue destination="rI8-qj-IJs" kind="push" identifier="OpenMovement" id="uE8-6D-13d"/>
+                        <segue destination="bNh-YV-1jg" identifier="OpenMovements" kind="push" id="fMn-hf-Yad"/>
+                        <segue destination="rI8-qj-IJs" identifier="OpenMovement" kind="push" id="uE8-6D-13d"/>
                     </connections>
                 </tableViewController>
             </objects>
@@ -929,7 +929,7 @@
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Villages" id="ufY-EX-dRC"/>
                     <connections>
-                        <segue destination="gqQ-ux-shr" kind="push" identifier="OpenVillage" id="4BC-qM-l28"/>
+                        <segue destination="gqQ-ux-shr" identifier="OpenVillage" kind="push" id="4BC-qM-l28"/>
                     </connections>
                 </tableViewController>
             </objects>
@@ -1132,7 +1132,7 @@
                                         </view>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <segue destination="ect-6r-bey" kind="push" identifier="PickTribe" id="c67-YW-SUH"/>
+                                            <segue destination="ect-6r-bey" identifier="PickTribe" kind="push" id="c67-YW-SUH"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -1290,6 +1290,6 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="JFt-Dq-a90"/>
+        <segue reference="uE8-6D-13d"/>
     </inferredMetricsTieBreakers>
 </document>
